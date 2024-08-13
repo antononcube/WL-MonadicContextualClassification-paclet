@@ -560,7 +560,7 @@ Clear[ClConSummarizeData];
 
 SyntaxInformation[ClConSummarizeData] = { "ArgumentsPattern" -> { OptionsPattern[] } };
 
-Options[ClConSummarizeData] = Join[ {"Type" -> Automatic, "Echo" -> True }, Options[DataColumnsSummary]];
+Options[ClConSummarizeData] = Join[ {"Type" -> Automatic, "Echo" -> True }, Options[RecordsSummary]];
 
 ClConSummarizeData[$ClConFailure] := $ClConFailure;
 
@@ -616,7 +616,7 @@ Clear[ClConSummarizeDataLongForm];
 
 SyntaxInformation[ClConSummarizeDataLongForm] = { "ArgumentsPattern" -> { OptionsPattern[] } };
 
-Options[ClConSummarizeDataLongForm] = Join[ {"Echo" -> True}, Options[DataColumnsSummary]];
+Options[ClConSummarizeDataLongForm] = Join[ {"Echo" -> True}, Options[RecordsSummary]];
 
 ClConSummarizeDataLongForm[$ClConFailure] := $ClConFailure;
 
